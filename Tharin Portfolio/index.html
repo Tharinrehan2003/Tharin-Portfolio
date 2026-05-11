@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tharin De Silva | Portfolio</title>
+  <meta
+    name="description"
+    content="Portfolio of Tharin De Silva, a Computer Science undergraduate focused on building polished web experiences and practical software systems."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+  <div class="page-noise" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <nav class="nav shell">
+      <a class="brand" href="#top">Tharin<span> / Portfolio</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="#summary">Summary</a>
+        <a href="#projects">Projects</a>
+        <a href="#stack">Stack</a>
+        <a href="#journey">Journey</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero shell" id="summary">
+      <div class="hero-copy reveal">
+        <div class="hero-intro-strip">
+          <p class="eyebrow">Open to internships and early-career opportunities</p>
+        </div>
+        <h1>Tharin <span>De Silva</span></h1>
+        <p class="hero-role-line">Computer Science Undergraduate</p>
+        <p class="lead">
+          I'm Tharin De Silva, a Computer Science undergraduate at IIT Campus.
+          I enjoy turning messy ideas into working systems, whether that means
+          building payment flows, improving dashboards, or polishing the front
+          end so it feels thoughtful instead of generic.
+        </p>
+        <div class="hero-facts reveal">
+          <article class="glass-panel intro-card">
+            <div class="intro-topline">Quick profile</div>
+            <ul class="profile-list">
+              <li><span>Focus</span><strong>DevOps + web systems</strong></li>
+              <li><span>Based in</span><strong>Colombo, Sri Lanka</strong></li>
+              <li><span>Studying</span><strong>BSc (Hons) Computer Science</strong></li>
+              <li><span>Strength</span><strong>Clean delivery with strong UX sense</strong></li>
+            </ul>
+          </article>
+
+          <article class="glass-panel signal-card">
+            <p class="signal-label">What I bring</p>
+            <div class="signal-grid">
+              <div>
+                <strong>3+</strong>
+                <span>projects shipped</span>
+              </div>
+              <div>
+                <strong>10+</strong>
+                <span>tools explored</span>
+              </div>
+              <div>
+                <strong>AAA</strong>
+                <span>A/L commerce results</span>
+              </div>
+              <div>
+                <strong>2028</strong>
+                <span>expected graduation</span>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="hero-actions">
+          <a class="glass-button primary" href="#projects">See selected work</a>
+          <a class="glass-button secondary" href="My CV/Tharin De Silva CV.pdf" download>Download CV</a>
+          <a class="glass-button secondary" href="#contact">Let's connect</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shell" id="projects">
+      <div class="section-heading reveal">
+        <p class="section-kicker">Selected work</p>
+        <h2>Projects that show both technical ability and practical thinking.</h2>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card reveal">
+          <p class="project-meta">2026 / Group project</p>
+          <h3>ClearDrive.lk</h3>
+          <p class="project-role">Order and payment systems lead</p>
+          <p>
+            Built backend workflows for vehicle ordering, status tracking, payment processing, and
+            refund logic. Helped shape a smoother checkout experience and supported usability
+            improvements through testing feedback.
+          </p>
+          <div class="tags">
+            <span>Next.js</span>
+            <span>FastAPI</span>
+            <span>PostgreSQL</span>
+            <span>PayHere</span>
+          </div>
+          <div class="project-actions">
+            <a
+              class="glass-button secondary"
+              href="https://github.com/ClearDrive-lk/cleardrive-lk.git"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View GitHub
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <p class="project-meta">2024 / Individual project</p>
+          <h3>Traffic Management System</h3>
+          <p class="project-role">Python data processing tool</p>
+          <p>
+            Analyzed traffic survey data from CSV files with validation, modular logic, and
+            calculated reporting. Focused on accuracy, readable code structure, and useful output.
+          </p>
+          <div class="tags">
+            <span>Python</span>
+            <span>CSV</span>
+            <span>Data analysis</span>
+            <span>File I/O</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <p class="project-meta">2024 / Group project</p>
+          <h3>ZeroHunger.lk</h3>
+          <p class="project-role">Awareness website</p>
+          <p>
+            Designed and built an SDG-focused website with a cleaner information flow and accessible
+            browsing experience. It strengthened my foundation in layout, storytelling, and frontend
+            basics.
+          </p>
+          <div class="tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>UI thinking</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section shell stack-layout" id="stack">
+      <div class="section-heading reveal">
+        <p class="section-kicker">Capabilities</p>
+        <h2>A balanced mix of coding, communication, and delivery skills.</h2>
+      </div>
+
+      <div class="stack-grid">
+        <article class="stack-card reveal">
+          <h3>Languages</h3>
+          <p>Python, Java, JavaScript, HTML, CSS, SQL</p>
+        </article>
+        <article class="stack-card reveal">
+          <h3>Web and frameworks</h3>
+          <p>React, Next.js, FastAPI, Tailwind CSS</p>
+        </article>
+        <article class="stack-card reveal">
+          <h3>Tools and workflow</h3>
+          <p>Git, GitHub, Figma, OOP, UML, documentation</p>
+        </article>
+        <article class="stack-card reveal">
+          <h3>Soft strengths</h3>
+          <p>Teamwork, communication, ownership, event management, calm execution</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section shell journey-layout" id="journey">
+      <div class="section-heading reveal">
+        <p class="section-kicker">Journey</p>
+        <h2>My background combines strong academics with real operational discipline.</h2>
+      </div>
+
+      <div class="journey-grid">
+        <div class="timeline reveal">
+          <article class="timeline-item">
+            <span class="timeline-year">2024 - Present</span>
+            <h3>BSc (Hons) Computer Science</h3>
+            <p>IIT Campus, Sri Lanka / University of Westminster</p>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-year">2019 - 2022</span>
+            <h3>GCE Advanced Level</h3>
+            <p>Isipathana College / Commerce stream / AAA results</p>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-year">2009 - 2019</span>
+            <h3>GCE Ordinary Level</h3>
+            <p>Isipathana College / 5 B's, 2 C's, 2 S's</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shell" id="experience">
+      <div class="section-heading reveal">
+        <p class="section-kicker">Experience</p>
+        <h2>Work that strengthened my reliability, discipline, and attention to detail.</h2>
+      </div>
+
+      <article class="experience-card glass-panel reveal">
+        <div class="experience-head">
+          <div>
+            <p class="experience-org">British Council Sri Lanka</p>
+            <h3>Exam Invigilator</h3>
+          </div>
+          <span class="timeline-year">2023 - 2025</span>
+        </div>
+        <p>
+          Supported secure and well-organized examination sessions by following strict procedures,
+          monitoring candidates carefully, and maintaining a calm professional environment.
+        </p>
+        <div class="tags">
+          <span>Attention to detail</span>
+          <span>Professional conduct</span>
+          <span>Process discipline</span>
+          <span>Responsibility</span>
+        </div>
+      </article>
+    </section>
+
+    <section class="section shell contact-section" id="contact">
+      <div class="contact-card glass-panel reveal">
+        <p class="section-kicker">Contact</p>
+        <h2>I'm looking for internships where I can contribute, learn fast, and grow with the team.</h2>
+        <p>
+          If you want someone who cares about clean implementation and a polished user experience,
+          let's talk.
+        </p>
+        <div class="contact-links">
+          <a class="glass-button primary" href="My CV/Tharin De Silva CV.pdf" download>Download CV</a>
+          <a class="glass-button secondary" href="mailto:tharinrehan2003@gmail.com">tharinrehan2003@gmail.com</a>
+          <a class="glass-button secondary" href="tel:+94766428089">+94 766 428 089</a>
+          <a class="glass-button secondary" href="https://github.com/Tharinrehan2003" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="glass-button secondary" href="https://www.linkedin.com/in/tharin-de-silva-b65075395?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer shell">
+    <p>Designed for clarity, personality, and a stronger first impression.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
